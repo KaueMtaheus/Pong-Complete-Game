@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             document.getElementById(target).classList.add('active');
 
-            //Remove background image when going to start screen
+            //Remove background da tela do jogo 
             if (target === 'start') {
                 mainContainer.classList.add('no-background');
             } else {

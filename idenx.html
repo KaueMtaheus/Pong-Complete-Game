@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <!----Menu inicial-->
     <div id="main-container">
         <div id="menu" class="section active">
             <h1>Game Retro</h1> 
@@ -17,10 +18,19 @@
                 <button data-target="credits">Credits</button>
             </div>   
         </div>
+        <!-- Conteúdo da tela do jogo -->
         <div id="start" class="section">
-            <h2>Start Game</h2>
-            <!-- Conteúdo da tela do jogo -->
             <button data-target="menu">Back to Menu</button>
+                <h2>Pong</h2>
+                <div id="game-board">
+                    <div id="left-paddle" class="paddle"></div>
+                    <div id="right-paddle" class="paddle"></div>
+                    <div id="ball"></div>
+                    <div id="score">
+                        <div id="left-score">0</div> - <div id="right-score">0</div>
+                </div>
+             </div>
+             
         </div>
         <div id="multiplayer" class="section">
             <h2>Multiplayer</h2>
