@@ -20,6 +20,10 @@ body {
     background-size: cover;
 }
 
+#main-container.no-background {
+    background-image: none;
+}
+
 #menu {
     justify-content: center;
     zoom: 2;

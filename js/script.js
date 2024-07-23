@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('button[data-target]');
+    const mainContainer = document.getElementById('main-container');
+    
     buttons.forEach(button => {
         button.addEventListener('click', () => {
             const target = button.getAttribute('data-target');
@@ -8,6 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 section.classList.remove('active');
             })
             document.getElementById(target).classList.add('active');
+
+            //Remove background image when going to start screen
+            if (target === 'start') {
+                mainContainer.classList.add('no-background');
+            } else {
+                mainContainer.classList.remove('no-background')
+            }
         })
     })
 })
