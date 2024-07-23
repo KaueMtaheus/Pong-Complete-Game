@@ -50,3 +50,11 @@ button:hover {
     border: none;
 }
 
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
