@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #432061;
+    font-family: fantasy
+}
+
+
+
+#main-container{
+    background-color:;
+    max-width: 1000px;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-image: url(/img/fundo-start.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menu {
+    justify-content: center;
+    zoom: 2;
+    margin-top: 60px;
+    margin-right: 80px;
+}
+
+#menu h1 {
+    font-weight: lighter;
+    color: #5a377a;
+    padding: 2px; 
+}
+
+
+button {
+    display: block;
+    list-style-type: none;
+    margin: auto;
+    margin-top: 1.5px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px 0px #0000005d;
+}
+
+button:hover {
+    background-color: #c8b4db;   
+    border: none;
+}
+
