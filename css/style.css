@@ -3,13 +3,10 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #432061;
-    font-family: fantasy
+    font-family: fantasy;
 }
 
-
-
-#main-container{
-    background-color:;
+#main-container {
     max-width: 1000px;
     height: 100vh;
     display: flex;
@@ -37,10 +34,8 @@ body {
     padding: 2px; 
 }
 
-
 button {
     display: block;
-    list-style-type: none;
     margin: auto;
     margin-top: 1.5px;
     background-color: white;
@@ -52,8 +47,8 @@ button {
 button:hover {
     background-color: #c8b4db;   
     border: none;
+    cursor: pointer;
 }
-
 
 .section {
     display: none;
@@ -63,22 +58,17 @@ button:hover {
     display: block;
 }
 
-
-#start {
-    color: white;
-}
-
 #game-board {
     width: 900px;
     height: 500px;
-    background-color: #000;
+    background-color: #0e3a1ff6;
     position: relative;
     overflow: hidden;  
 }
 
 .paddle {
     width: 10px;
-    height: 80px;
+    height: 100px;
     background-color: white;
     position: absolute;
 }
@@ -87,9 +77,8 @@ button:hover {
     left: 10px;
 }
 
-
 #right-paddle {
-    left: 10px;
+    right: 10px;
 }
 
 #ball {
@@ -101,11 +90,13 @@ button:hover {
 }
 
 #score {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    position: absolute;
     color: white;
     font-size: 24px;
-    position: absolute;
     top: 10px;
     width: 100%;
     text-align: center;
 }
-

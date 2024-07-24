@@ -13,8 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (target === 'start' || target === 'multiplayer') {
                 mainContainer.classList.add('no-background');
+                if (target === 'start') {
+                    startGame();
+                }
+
             } else {
                 mainContainer.classList.remove('no-background');
+                gameActive = false; // Pausar o jogo se não estiver na tela de jogo
             }
         });
     });
@@ -28,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let leftScore = 0;
     let rightScore = 0;
 
+    
     const gameBoard = document.getElementById('game-board');
     const boardRect = gameBoard.getBoundingClientRect();
 
