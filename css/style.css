@@ -58,45 +58,40 @@ button:hover {
     display: block;
 }
 
-#game-board {
-    width: 900px;
+
+#dvPainel{
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+.itemPainel{
+    margin: 5px;
+}
+#dvJogo{
+    width: 960px;
     height: 500px;
-    background-color: #0e3a1ff6;
-    position: relative;
-    overflow: hidden;  
+    border: 1px solid #000;
+    background-color: #000;
 }
-
-.paddle {
-    width: 10px;
-    height: 100px;
-    background-color: white;
+#dvBola{
     position: absolute;
+    top: 240px;
+    left: 475px;
+    width: 20px;
+    height: 20px;
+    background-color: #8888;
 }
-
-#left-paddle {
+.barra{
+    position: absolute;
+    width: 20px;
+    height: 140px;
+    background-color: #888;
+    top: 180px;
+}
+.esquerda{
     left: 10px;
 }
-
-#right-paddle {
-    right: 10px;
+.direita{
+    left: 930px;
 }
 
-#ball {
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    position: absolute;
-    border-radius: 50%;
-}
-
-#score {
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    position: absolute;
-    color: white;
-    font-size: 24px;
-    top: 10px;
-    width: 100%;
-    text-align: center;
-}

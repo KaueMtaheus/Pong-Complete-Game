@@ -7,30 +7,21 @@
 <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    
     <!----Menu inicial-->
     <div id="main-container">
         <div id="menu" class="section active">
             <h1>Game Pong</h1> 
             <div id="menu-option">
-                <button data-target="start">Start</button>
+                <button id="startButton">Start</button>
                 <button data-target="multiplayer">Multiplayer</button>
                 <button data-target="settings">Settings</button>
                 <button data-target="credits">Credits</button>
             </div>   
         </div>
-        <!-- Conteúdo da tela do jogo -->
-        <div id="start" class="section">
-            <button data-target="menu">Back to Menu</button>
-                <h2>Pong</h2>
-                <div id="game-board">
-                    <div id="left-paddle" class="paddle"></div>
-                    <div id="right-paddle" class="paddle"></div>
-                    <div id="ball"></div>
-                    <div id="score">
-                        <div id="left-score">0</div> - <div id="right-score">0</div>
-                </div>
-             </div>
-        </div>
+
+
+        
         <div id="multiplayer" class="section">
             <h2>Multiplayer</h2>
             <!-- Conteúdo da tela multiplayer -->
@@ -48,5 +39,6 @@
         </div> 
     </div>
     <script src="js/script.js"></script>
+    <script src="/js/game.js"></script>
 </body>
 </html>
