@@ -17,7 +17,7 @@ var posCpuX,posCpuY//Posição da CPU em 'X' e 'Y'.
 var dirJy//Direção 'y' do jogador.
 
 //Posições iniciais
-var posJogIniY=180//Posição do jogador inicial em 'Y'.
+var posJogIniY=190//Posição do jogador inicial em 'Y'.
 var posCpuIniY=180//Posição inicial da CPU em 'Y'.
 var posBolaIniX=475//Posição inicial da bola em 'X'.
 var posBolaIniY=240//Posição inicial da bola em 'Y'.
