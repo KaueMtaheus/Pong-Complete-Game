@@ -83,17 +83,24 @@ button:hover {
     height: 450px;
     border: 1px solid #ffffff;
     background-color: #000;
+    position: relative;
 }
 
-
+#center-camp {
+    margin: auto;
+    width: 10px;
+    height: 450px;
+    background-color: white;
+}
 
 #dvBola{
     position: absolute;
     top: 240px;
     left: 475px;
-    width: 20px;
-    height: 20px;
-    background-color: white;
+    width: 30px;
+    height: 30px;
+    background-color: #01eeee;
+    border-radius: 20px;
 }
 
 
@@ -107,11 +114,11 @@ button:hover {
 
 
 .esquerda{
-    left: 100px;
+    left: 0;
 }
 
 
 .direita{
-    left: 930px;
+    left: 940px;
 }
 

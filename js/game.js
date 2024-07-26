@@ -48,17 +48,22 @@ var tecla//Variável que vai armazenar o código da tecla pressionada.
 jogo=false
 
 
-function controlajog(){
-    if(jogo){//Se o jogo estiver rolando.
-        posJogadorY+=velJogador*dirJy
-        if(((posJogadorY+barraH)>=campoH)||((posJogadorY)<=0)){
-        //Nâo deixa a barrinha do jogador sair da tela.
-            posJogadorY+=(velJogador*dirJy)*(-1)
-            //VelocidadedoJogador*PosiçãodoJogador.
+function controlajog() {
+    if (jogo) {
+        posJogadorY += velJogador * dirJy;
+        // Não deixar a raquete do jogador sair da tela
+        if (posJogadorY < 0) {
+            posJogadorY = 0;
         }
-        vjogador.style.top=posJogadorY+'px'
+        if ((posJogadorY + barraH) > campoH) {
+            posJogadorY = campoH - barraH;
+        }
+        vjogador.style.top = posJogadorY + 'px';
     }
 }
+
+
+
 function controlacpu(){
     if(jogo){
         if((posBolaX > (campoW/2))&&(bolaX > 0)){
@@ -74,6 +79,7 @@ function controlacpu(){
                     posCpuY-=velCpu
                 }
             }
+            
         }else{
             //Posicionar CPU no centro
             if((posCpuY+(barraH/2))<(campoH/2)){
