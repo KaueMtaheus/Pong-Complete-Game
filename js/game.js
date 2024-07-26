@@ -109,7 +109,7 @@ function controlaBola(){
         bolaX*=-1
     }
     //Limites superior e inferior
-    if((posBolaY >=480)||(posBolaY <= 0)){
+    if((posBolaY >=420)||(posBolaY <= 0)){
         bolaY*=-1
     }
     //Saiu da tela pela direita e pela esquerda
