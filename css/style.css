@@ -88,18 +88,20 @@ button:hover {
 
 #center-camp {
     margin: auto;
-    width: 10px;
+    width: 7px;
     height: 450px;
     background-color: white;
 }
 
 #dvBola{
+    background-image: url(/img/futebol.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
-    top: 240px;
-    left: 475px;
-    width: 20px;
-    height: 20px;
-    background-color: #01eeee;
+    top: 230px;
+    left: 465px;
+    width: 30px;
+    height: 30px;
     border-radius: 20px;
 }
 

@@ -19,8 +19,8 @@ var dirJy//Direção 'y' do jogador.
 //Posições iniciais
 var posJogIniY=190//Posição do jogador inicial em 'Y'.
 var posCpuIniY=180//Posição inicial da CPU em 'Y'.
-var posBolaIniX=475//Posição inicial da bola em 'X'.
-var posBolaIniY=240//Posição inicial da bola em 'Y'.
+var posBolaIniX=465//Posição inicial da bola em 'X'.
+var posBolaIniY=230//Posição inicial da bola em 'Y'.
 
 //Tamanhos
 var campoX=0//Posição 'X' do campo.
