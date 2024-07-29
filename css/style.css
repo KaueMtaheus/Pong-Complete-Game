@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #432061;
+    background-color: black;
     font-family: fantasy;
 }
 
@@ -12,10 +12,12 @@ body {
     display: flex;
     margin: auto;
     justify-content: center;
-    background-image: url(/img/fundo-start.png);
+    background-image: url(/img/football-142952_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
+
 
 #main-container.no-background {
     background-image: none;
@@ -24,28 +26,38 @@ body {
 #menu {
     justify-content: center;
     zoom: 2;
-    margin-top: 60px;
-    margin-right: 80px;
+    margin-top: 40px;
+    margin: auto;
 }
 
 #menu h1 {
     font-weight: lighter;
-    color: #5a377a;
-    padding: 2px; 
+    text-align: center;
+    font-size: 50px; 
+    color: #FFFFFF;
+    background-color: #1111bb;
+    border-radius: 10px;
+}
+
+span img {
+    width: 40px;
 }
 
 button {
+    font-weight: bold;
+    width: 250px;
     display: block;
     margin: auto;
-    margin-top: 1.5px;
-    background-color: white;
+    margin-top: 5px;
+    background-color: #1111bb;
+    color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 1px 1px 1px 0px #0000005d;
 }
 
 button:hover {
-    background-color: #c8b4db;   
+    background-color: #2222e0;   
     border: none;
     cursor: pointer;
 }
@@ -58,10 +70,31 @@ button:hover {
     display: block;
 }
 
+#placarJogo {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+#leftPla {
+    text-align: center;
+    width: 100PX;
+    background-color: white;
+    font-size: 30px;
+}
+
+#rightPla {
+    text-align: center;
+    color: #ffffff;
+    width: 100px;
+    background-color: #2222e0;
+    font-size: 30px;    
+}
+
 
 #backButton {
-    margin-bottom: 20px;
     margin-top: 20px;
+    width: 50px;
 }
 
 
@@ -77,12 +110,13 @@ button:hover {
 }
 
 
-#dvJogo{
+#dvJogo{    
     margin: auto;
     width: 960px;
     height: 450px;
-    border: 1px solid #ffffff;
-    background-color: #000;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    background-image: url(/img/gramado.jpg);
     position: relative;
 }
 
@@ -106,6 +140,8 @@ button:hover {
 }
 
 
+
+
 .barra{
     position: absolute;
     width: 20px;
@@ -116,11 +152,14 @@ button:hover {
 
 
 .esquerda{
-    left: 0;
+    left: 10px;
+    border-radius: 30px;
 }
 
 
 .direita{
-    left: 940px;
+    background-color: #2222e0;
+    left: 930px;
+    border-radius: 30px;
 }
 
